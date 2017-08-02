@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HorizontalSnapRecyclerViewSample</string>
+
+    <string name="sample">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+
+    <string name="item_match_parent">Match Parent</string>
+    <string name="item_medium">Medium</string>
+    <string name="item_small">Small</string>
+</resources>
