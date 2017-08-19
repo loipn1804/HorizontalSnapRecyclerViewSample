@@ -155,11 +155,6 @@ public class HorizontalSnapRecyclerView extends RecyclerView {
     }
 
     @Override
-    public void onScrolled(int dx, int dy) {
-        super.onScrolled(dx, dy);
-    }
-
-    @Override
     public void onScrollStateChanged(int state) {
         super.onScrollStateChanged(state);
         if (!mIsSnap) return;
@@ -199,9 +194,7 @@ public class HorizontalSnapRecyclerView extends RecyclerView {
 
                 View destView = linearLayoutManager.findViewByPosition(destPosition);
                 int distance = destView.getLeft() - (screenWidth - destView.getWidth()) / 2;
-                if (mCurrentPosition == destPosition && (mCurrentPosition == 0 || mCurrentPosition == linearLayoutManager.getItemCount() - 1)) {
-
-                } else {
+                if (mCurrentPosition != destPosition || (mCurrentPosition != 0 && mCurrentPosition != linearLayoutManager.getItemCount() - 1)) {
                     smoothScrollBy(distance, 0);
                 }
 
